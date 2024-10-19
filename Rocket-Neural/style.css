@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0e5ec;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 
+        8px 8px 15px #a3b1c6,
+        -8px -8px 15px #ffffff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.game-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        10px 10px 20px #a3b1c6,
+        -10px -10px 20px #ffffff;
+}
+
+#gameCanvas {
+    display: block;
+}
+
+.game-title {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #4a4a4a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.control-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e0e5ec;
+    color: #4a4a4a;
+    cursor: pointer;
+    box-shadow: 
+        5px 5px 10px #a3b1c6,
+        -5px -5px 10px #ffffff;
+    transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+    box-shadow: 
+        inset 5px 5px 10px #a3b1c6,
+        inset -5px -5px 10px #ffffff;
+}
+
+.control-btn:active {
+    box-shadow: 
+        inset 5px 5px 10px #a3b1c6,
+        inset -5px -5px 10px #ffffff;
+    transform: translateY(2px);
+}
+
+#accelerateBtn {
+    background-color: #ffd700;
+    color: #333;
+}
+
+#accelerateBtn:hover {
+    background-color: #ffec8b;
+}
+
+.countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#playAgainstAIBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#playAgainstAIBtn:hover {
+    background-color: #45a049;
+}
