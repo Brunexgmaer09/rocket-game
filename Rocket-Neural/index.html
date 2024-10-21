@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Jogo 2D do Foguete com NEAT</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/neataptic/1.4.4/neataptic.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Jogo 2D do Foguete com NEAT</h1>
+        <canvas id="gameCanvas"></canvas>
+        
+        <div class="controls">
+            <button id="playAgainstAIBtn" class="control-btn">Jogar contra IA</button>
+            <button id="resetBtn" class="control-btn">Reiniciar Treinamento</button>
+            <button id="muteBtn" class="control-btn">Unmute</button>
+            <button id="accelerateBtn" class="control-btn">Acelerar Treinamento</button>
+        </div>
+        <div id="countdown" class="countdown"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
